@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>My A-Frame Scene</title>
+   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+ 
+<body>
+  <a-scene>
+  <a-assets>
+    <a-asset-item id="controller" src="vr_controller_vive.obj"></a-asset-item>
+  </a-assets>
+
+  	<a-entity camera look-controls wasd-controls></a-entity>
+    <a-entity vive-controls="hand: left"></a-entity>
+    <a-entity vive-controls="hand: right" vive-cursor></a-entity>
+
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+  </a-scene>
+</body>
